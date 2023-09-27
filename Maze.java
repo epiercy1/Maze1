@@ -28,6 +28,8 @@ public class Maze {
 		//Must use recursion
 		//Must return a String of the form: r, c-r1, c1-r2, c2
 
+		//drop breadcrumb
+
 		//base cases
 
 		//if we are at the end
@@ -35,7 +37,42 @@ public class Maze {
 
 		//if we are at a dead end(zero ways to go)
 		//	return null
+
+		//if only one way to go
+		//	calculate the next spot's coordinates
+		//	if we are changing direction
+		//		return nextRow + ", " + nextCol + " - " + solve(nextRow, nextCol, endRow, endCol)
+
+		//there are multiple ways to go
+
+		//if we can move east
+		//	calculate the east coordinates
+		//	result = solve(eastRow, eastCol, endRow, endCol)
+
+		//	if result != null
+		//		return eastRow + " + " + eastCol + " - " + result
+
+		//if we can move south
+		//	calculate the south coordinates
+		//	result = solve(southRow, southCol, endRow, endCol)
+
+		//	if result != null
+		//		return southRow + " + " + southCol + " - " + result
+
+		//if we can move west
+		//	calculate the west coodinates
+		//	result = solve(westRow, westCol, endRow, endCol
+
+		//	if result != null
+		//		return westRow + " + " + westCol + " - " + result
+
+		//if we can move north
+		//	calculate the north coordinates
+		//	result = solve(northRow, northCol, endRow, endCol)
+
+		//	if result != null
+		//		return northRow + " + " + northCol + " - " + result
 		
-		return result;
+		return null;
 	}
 }
